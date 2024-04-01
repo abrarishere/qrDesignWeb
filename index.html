@@ -1,71 +1,102 @@
-:root {
-  --white: hsl(0, 0%, 100%);
-  --lightgray: hsl(212, 45%, 89%);
-  --grayishblue: hsl(220, 15%, 55%);
-  --darkblue: hsl(218, 44%, 22%);
-}
+<!DOCTYPE html>
+<html lang="en">
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | QR code component</title>
+  
+  <style>
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --lightgray: hsl(212, 45%, 89%);
+      --grayishblue: hsl(220, 15%, 55%);
+      --darkblue: hsl(218, 44%, 22%);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body,
+    html {
+      height: 100%;
+      background: var(--lightgray);
+      font-family: 'Outfit', sans-serif;
+    }
+    
+    p {
+      font-size: 15px;
+    }
+    
+    .main {
+      background: var(--white);
+      max-width: 300px;
+      width: 90%; /* Adjusted to 90% of the viewport width */
+      height: auto; /* Changed to auto for responsiveness */
+      border-radius: 14px;
+      margin: 0 auto; /* Center horizontally */
+      padding: 20px; /* Adjusted padding */
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+    
+    .main img {
+      width: 100%; /* Adjusted to fill the container */
+      max-width: 272px; /* Added max-width to limit image size */
+      height: auto; /* Added to maintain aspect ratio */
+      border-radius: 18px;
+    }
+    
+    .main h3,
+    .main p {
+      color: var(--darkblue);
+      padding: 0 10px; /* Adjusted padding */
+    }
+    
+    .attribution {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      font-size: 10px;
+      color: #ccc;
+      padding: 5px 0; /* Adjusted padding */
+    }
+    
+    a {
+      color: var(--darkblue);
+      text-decoration: none;
+    }
+    
+    a:hover {
+      background: var(--darkblue);
+      color: var(--white);
+    }
+  </style>
+  
+</head>
 
-body,
-html {
-  height: 100%;
-  background: var(--lightgray);
-  font-family: 'Outfit', sans-serif;
-}
+<body>
+  <div class="main">
+    <img src="images/image-qr-code.png" alt="">
+    <h3>Improve your front-end skills by building projects</h3>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
+    Coded by <a href="https://github.com/abrarishere">M. Abrar</a>. 
+  </div>
+</body>
 
-p {
-  font-size: 15px;
-}
-
-.main {
-  background: var(--white);
-  max-width: 300px;
-  width: 90%; /* Adjusted to 90% of the viewport width */
-  height: auto; /* Changed to auto for responsiveness */
-  border-radius: 14px;
-  margin: 0 auto; /* Center horizontally */
-  padding: 20px; /* Adjusted padding */
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  text-align: center;
-}
-
-.main img {
-  width: 100%; /* Adjusted to fill the container */
-  max-width: 272px; /* Added max-width to limit image size */
-  height: auto; /* Added to maintain aspect ratio */
-  border-radius: 18px;
-}
-
-.main h3,
-.main p {
-  color: var(--darkblue);
-  padding: 0 10px; /* Adjusted padding */
-}
-
-.attribution {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  font-size: 10px;
-  color: #ccc;
-  padding: 5px 0; /* Adjusted padding */
-}
-
-a {
-  color: var(--darkblue);
-  text-decoration: none;
-}
-
-a:hover {
-  background: var(--darkblue);
-  color: var(--white);
-}
+</html>
